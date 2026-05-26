@@ -1,0 +1,661 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening", "Good afternoon",
+        "How are you", "Is anyone there", "Can you help me", "Anyone available",
+        "Need assistance", "Greetings", "Hey there", "Hi there", "Hello there",
+        "What's up", "Howdy", "Hi, I need help", "Hello, I have a question",
+        "Is this customer support", "Hello support", "Hi support team",
+        "Good day", "Hiya", "Hey bot", "Hello bot", "Hi bot",
+        "Start", "Begin", "I need some help"
+      ],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hi there! What can I assist you with today?",
+        "Welcome to customer support. How may I help you?",
+        "Hello! I'm here to help. What's on your mind?",
+        "Hi! Great to have you here. How can I assist?",
+        "Good day! What can I do for you today?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "Talk to you later", "Have a nice day",
+        "Catch you later", "I am leaving", "Thanks bye", "Take care", "See ya",
+        "That's all I needed", "I'm done for now", "Have a good day",
+        "Until next time", "I'll talk to you later", "Signing off",
+        "I'm good now thanks", "All sorted", "That's all", "Nothing more",
+        "Closing chat", "End chat", "Exit", "Quit", "Done",
+        "Everything is resolved", "Issue is fixed", "Thanks that's all",
+        "Okay bye", "Good night"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "Have a great day! Don't hesitate to reach out again.",
+        "Thank you for contacting support. Take care!",
+        "See you again soon. Stay safe!",
+        "Bye! Feel free to come back if you need anything.",
+        "It was a pleasure assisting you. Goodbye!"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you", "Thanks", "Thanks a lot", "I appreciate it",
+        "Thank you so much", "Nice help", "Helpful support",
+        "You've been very helpful", "That was really helpful", "Much appreciated",
+        "Great support", "Thanks for your help", "I really appreciate your help",
+        "You solved my issue", "Problem solved thanks", "Thanks for the info",
+        "That helped", "Awesome thanks", "Perfect thanks", "Thanks a ton",
+        "Cheers", "Many thanks", "That's exactly what I needed",
+        "You are so helpful", "Very helpful thank you", "Great answer thanks",
+        "Thanks for the quick response", "Appreciate your support"
+      ],
+      "responses": [
+        "You're welcome! Happy to help.",
+        "Happy to help! Is there anything else you need?",
+        "Glad I could assist you! Feel free to ask if you have more questions.",
+        "Anytime! That's what we're here for.",
+        "My pleasure! Don't hesitate to reach out again.",
+        "So glad we could resolve your issue!"
+      ]
+    },
+
+    {
+      "tag": "password_reset",
+      "patterns": [
+        "I forgot my password", "Reset my password", "Cannot login",
+        "I can't access my account", "My password is not working",
+        "Help me recover my account", "Forgot login password", "Unable to sign in",
+        "Password reset issue", "Login problem", "My account is locked",
+        "I need a new password", "How to change my password", "Change password",
+        "Password expired", "I am locked out of my account",
+        "I cannot remember my password", "Reset link not received",
+        "Password reset email not received", "How do I update my password",
+        "Sign in not working", "Authentication failed", "Login error",
+        "Account recovery", "Forgot credentials", "Can't log in",
+        "Password too old", "Password doesn't match", "Reset link expired",
+        "Change account password", "I want to update my password"
+      ],
+      "responses": [
+        "You can reset your password by clicking 'Forgot Password' on the login page.",
+        "A password reset link will be sent to your registered email address.",
+        "Please use the password recovery option on the sign-in page.",
+        "If you didn't receive the reset email, check your spam folder.",
+        "Your account may be locked after multiple failed attempts. Contact us to unlock it.",
+        "To change your password, go to Account Settings > Security > Change Password."
+      ]
+    },
+
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order", "Track my order", "Order status",
+        "Has my package shipped", "When will my order arrive",
+        "I did not receive my order", "Check delivery status", "My parcel is late",
+        "Track shipment", "Delivery update", "Where is my package",
+        "Order tracking help", "What is the status of my order",
+        "Has my order been dispatched", "When will I get my order",
+        "My order is delayed", "Expected delivery date", "Order not yet delivered",
+        "I want to track my shipment", "Provide order update",
+        "Show my order details", "Is my order shipped", "Order arrival time",
+        "Check my package status", "Shipping update please",
+        "How long will delivery take", "Order progress", "Where is my parcel",
+        "My shipment is not moving", "Order number tracking"
+      ],
+      "responses": [
+        "Please share your order ID so I can check the status for you.",
+        "You can track your order from the 'My Orders' section in your account.",
+        "Your shipment is on the way and will arrive soon.",
+        "Your order is currently being processed and will ship shortly.",
+        "I'll look into your order status right away. Could you share your order number?",
+        "Orders typically take 3-5 business days to deliver after dispatch."
+      ]
+    },
+
+    {
+      "tag": "refund",
+      "patterns": [
+        "I want a refund", "Return my money", "How do I get refund",
+        "Cancel my order", "Refund status", "I want to return product",
+        "Money not returned", "Refund my payment", "I need refund support",
+        "Product return issue", "My refund is delayed", "Return request",
+        "How long does refund take", "Refund not received",
+        "I returned the item but no refund", "Refund policy",
+        "Can I get my money back", "Product not as described, want refund",
+        "Cancellation and refund", "Refund to original payment method",
+        "Initiate return", "I want to send back my order",
+        "Wrong item received want refund", "Damaged item refund",
+        "Refund timeline", "When will I get my refund",
+        "Return process", "How to return an item", "Item return help",
+        "Refund request not processed"
+      ],
+      "responses": [
+        "Your refund request has been initiated and will be processed shortly.",
+        "Refunds typically take 5-7 business days to reflect in your account.",
+        "Please share your order details so we can process your refund.",
+        "Our support team will verify and approve your refund request.",
+        "Refunds are credited back to the original payment method used.",
+        "You can raise a return request from the 'My Orders' section within 30 days of delivery."
+      ]
+    },
+
+    {
+      "tag": "payment_issue",
+      "patterns": [
+        "Payment failed", "Unable to pay", "Transaction issue",
+        "My card was charged twice", "Payment not successful", "Billing problem",
+        "Payment declined", "Money deducted but order not placed",
+        "UPI payment failed", "Credit card issue", "Net banking not working",
+        "Double charge on my account", "My payment is stuck",
+        "Debit card payment failed", "Payment gateway error",
+        "Transaction declined by bank", "Unable to complete checkout",
+        "Wallet payment not working", "EMI payment issue", "Money debited twice",
+        "Payment error", "My payment did not go through", "Card declined",
+        "Transaction failed", "Online payment not working",
+        "Amount deducted no confirmation", "Payment pending",
+        "I was charged but order cancelled", "Refund for failed payment",
+        "Payment page not loading"
+      ],
+      "responses": [
+        "Please try the payment again after a few minutes.",
+        "Your payment issue has been recorded. We'll investigate and get back to you.",
+        "If money was deducted and the order wasn't placed, it will be refunded within 5-7 business days.",
+        "Please contact your bank if the payment continues to fail.",
+        "Double charges are usually reversed within 24-48 hours automatically.",
+        "Try clearing your browser cache or using a different browser/device for payment."
+      ]
+    },
+
+    {
+      "tag": "account_creation",
+      "patterns": [
+        "Create new account", "How to register", "Sign up problem",
+        "Cannot create account", "Registration issue", "Need help signing up",
+        "New user registration", "Open account", "How do I make an account",
+        "I am unable to register", "Signup not working", "Register with email",
+        "Register with phone number", "OTP not received during signup",
+        "Verification email not received", "Account creation failed",
+        "Email already registered", "How do I create a profile",
+        "New customer registration", "Getting error during signup",
+        "How do I join", "I want to create an account", "First time signup",
+        "New account setup", "Join the platform", "Register my details",
+        "How to open new account", "Signup page not working",
+        "I cannot complete registration", "Create a free account"
+      ],
+      "responses": [
+        "Click the 'Sign Up' or 'Register' button on the homepage to get started.",
+        "Make sure all required fields are filled in correctly during registration.",
+        "You can register using your email address or mobile number.",
+        "If you didn't receive a verification OTP, click 'Resend OTP' after 60 seconds.",
+        "If your email is already registered, try logging in or use 'Forgot Password'.",
+        "Registration errors can often be resolved by switching to a different browser."
+      ]
+    },
+
+    {
+      "tag": "delivery_issue",
+      "patterns": [
+        "Delivery is late", "My package is damaged", "Wrong item delivered",
+        "Delivery problem", "Item missing from package", "Courier issue",
+        "Package not delivered", "Order delivered to wrong address",
+        "Received broken item", "Parcel is damaged", "Partial order received",
+        "Missing items in my order", "Delivery boy was rude",
+        "Delivery attempted but I was not home", "Shipment lost",
+        "Package shows delivered but not received", "Wrong color item delivered",
+        "Wrong size delivered", "Damaged product received", "Delivery rescheduling",
+        "Item arrived broken", "My order went to wrong address",
+        "Delivery never came", "Package is missing", "Lost shipment",
+        "Courier did not deliver", "Item damaged in transit",
+        "I got someone else's order", "Incomplete delivery", "Box was open on arrival"
+      ],
+      "responses": [
+        "We sincerely apologize for the inconvenience caused.",
+        "Please share your order ID and a photo of the issue so we can help.",
+        "Our delivery team will investigate this and take corrective action.",
+        "If your item is marked delivered but not received, raise a complaint within 48 hours.",
+        "We will arrange a replacement or refund for damaged or wrong items.",
+        "You can reschedule delivery from the tracking page or contact our courier partner."
+      ]
+    },
+
+    {
+      "tag": "product_info",
+      "patterns": [
+        "Tell me about this product", "Product details", "Is this item available",
+        "Product specifications", "Do you have this in stock", "What is the price",
+        "Available colors", "Show product information",
+        "What are the features of this product", "Product dimensions",
+        "Material of the product", "Is this product genuine",
+        "Product warranty details", "Does this product come with accessories",
+        "Battery life of this product", "Is this product compatible with my device",
+        "What sizes are available", "Tell me about product quality",
+        "Product comparison", "Alternative products",
+        "Is this available online", "Stock status", "Check availability",
+        "Product description", "What does this product include",
+        "Is this original", "Product rating", "Product reviews",
+        "Which brand is this", "Technical specs of the product"
+      ],
+      "responses": [
+        "Please share the product name or ID and I'll get you the details.",
+        "Full product details including specifications are available on the product page.",
+        "Stock availability changes frequently. Please check the product page for real-time info.",
+        "Our products come with a standard manufacturer's warranty.",
+        "You can compare products using the 'Compare' feature on our website.",
+        "For detailed specifications, I recommend checking the product listing or the brand's official site."
+      ]
+    },
+
+    {
+      "tag": "human_support",
+      "patterns": [
+        "I want to talk to human", "Connect me to support agent",
+        "Human assistance needed", "Live agent", "Talk to customer care",
+        "Real person support", "Agent support required",
+        "I want to speak to someone", "Transfer to a person",
+        "Connect me to a representative", "I need to talk to a human",
+        "Bot is not helpful", "Escalate my issue", "Speak to customer service",
+        "Human operator please", "I need expert help",
+        "Can I talk to the manager", "This is urgent, connect me to a person",
+        "Get me a human", "I need real help", "Stop bot talk to person",
+        "I want an agent", "Can I speak to a live person",
+        "I prefer talking to a human", "Connect to support executive",
+        "Transfer my chat", "Real support please", "Get human on chat",
+        "I want support from a person not a bot"
+      ],
+      "responses": [
+        "Connecting you to a human support agent right away.",
+        "Please wait while we transfer your chat to an available agent.",
+        "A support executive will join this chat shortly.",
+        "Your request has been escalated to our live support team.",
+        "I understand you'd prefer to speak with a human. One moment please.",
+        "Our agents are available Monday to Saturday, 9 AM to 6 PM. Transferring now."
+      ]
+    },
+
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "Cancel my order", "I want to cancel", "How to cancel an order",
+        "Can I cancel my purchase", "Order cancellation", "Cancel before delivery",
+        "Stop my shipment", "I no longer want this item",
+        "Cancel order before it ships", "Mistakenly placed order",
+        "Wrong item ordered, cancel", "Cancel and refund",
+        "Order cancellation request", "Is it too late to cancel",
+        "Cancel order placed today", "I changed my mind about my order",
+        "Please cancel my purchase", "Stop processing my order",
+        "How to stop my order", "Cancel order immediately",
+        "I want to withdraw my order", "Order not needed anymore",
+        "Please halt my delivery", "I placed order by mistake",
+        "Can I undo my order", "I don't want this anymore"
+      ],
+      "responses": [
+        "You can cancel your order from 'My Orders' section before it is shipped.",
+        "Orders can be cancelled within 24 hours of placement at no charge.",
+        "Once shipped, cancellation may not be possible but you can initiate a return.",
+        "Please share your order ID and we'll check if cancellation is still possible.",
+        "After cancellation, the refund will be credited within 5-7 business days.",
+        "If the cancel option is not visible, please contact us immediately."
+      ]
+    },
+
+    {
+      "tag": "change_address",
+      "patterns": [
+        "Change delivery address", "Update shipping address", "Wrong address entered",
+        "Modify address", "Can I update my address after ordering",
+        "Address change request", "Deliver to a different address",
+        "I entered the wrong address", "Change address before delivery",
+        "Update my home address", "Shipping to wrong location",
+        "Address correction needed", "Wrong pin code entered",
+        "Can I redirect my delivery", "Change drop location",
+        "I need to update my delivery address", "Send to another address",
+        "My address has changed", "I moved, update delivery address",
+        "Edit my shipping address", "Delivery location change",
+        "Wrong city in address", "Fix my address", "Correct my shipping info",
+        "Update address on my order", "Change where my order is going"
+      ],
+      "responses": [
+        "Address changes can be made before the order is shipped.",
+        "Please contact us immediately with your order ID to update the delivery address.",
+        "Go to 'My Orders', select the order, and tap 'Edit Address' if the option is available.",
+        "Once an order is dispatched, address changes may not be possible.",
+        "We'll try our best to update the address with the courier partner.",
+        "For urgent address changes, please call our helpline directly."
+      ]
+    },
+
+    {
+      "tag": "coupon_discount",
+      "patterns": [
+        "Apply coupon code", "Coupon not working", "Discount code invalid",
+        "How to use promo code", "Where to enter coupon", "Coupon expired",
+        "I have a gift voucher", "Promo code not applying",
+        "Discount not reflecting", "Is this offer still valid",
+        "How do I get a discount", "First order discount",
+        "Referral code not working", "Cashback offer", "Bank discount not applied",
+        "My coupon is not being accepted", "Voucher code error",
+        "Offer code not valid", "How do I apply a discount",
+        "Discount not showing at checkout", "I have a promo code",
+        "Special offer not applied", "Coupon terms and conditions",
+        "How to get a promo code", "Is there any discount available",
+        "Apply discount at checkout", "Coupon code field", "My code is invalid"
+      ],
+      "responses": [
+        "Enter your coupon code in the 'Apply Coupon' field at checkout.",
+        "Make sure the coupon code is entered exactly as provided, without spaces.",
+        "Some coupons are valid only for specific products or categories.",
+        "Coupons may have expiry dates or minimum order value requirements.",
+        "Contact us with the coupon code and we'll check its validity for you.",
+        "Bank discounts are applied at payment step when using the eligible card."
+      ]
+    },
+
+    {
+      "tag": "invoice_billing",
+      "patterns": [
+        "I need my invoice", "Download my bill", "Invoice not received",
+        "Send me a receipt", "Tax invoice request", "GST invoice needed",
+        "Billing statement", "Invoice for my order",
+        "I need a receipt for my purchase", "How to get my invoice",
+        "Invoice for business expense", "Bill with GST number",
+        "I need a billing document", "Purchase receipt",
+        "I need proof of purchase", "Invoice copy",
+        "Where is my bill", "I haven't received my invoice",
+        "Can you send my invoice", "Invoice download",
+        "Tax receipt needed", "Invoice with company name",
+        "Billing details for my order", "Commercial invoice",
+        "Invoice not showing in account", "Duplicate invoice request"
+      ],
+      "responses": [
+        "You can download your invoice from the 'My Orders' section of your account.",
+        "Tax invoices are emailed to your registered email address after delivery.",
+        "Please share your order ID and we'll resend the invoice.",
+        "GST invoices are generated automatically and available within 24 hours of delivery.",
+        "For business invoices with GSTIN, please update your details in account settings.",
+        "If you need a duplicate invoice, contact us with your order number."
+      ]
+    },
+
+    {
+      "tag": "subscription",
+      "patterns": [
+        "How to subscribe", "Cancel subscription", "Subscription plan details",
+        "Upgrade my plan", "Downgrade subscription", "Subscription not working",
+        "Auto-renewal issue", "Pause subscription", "Subscription expired",
+        "Billing cycle", "Change subscription plan", "What is included in premium",
+        "Subscription fee", "How to manage subscription",
+        "I want to unsubscribe", "Stop my subscription",
+        "Subscription charges", "Monthly plan details", "Annual plan",
+        "Membership plans", "How to renew subscription",
+        "My subscription is not active", "Subscription benefits",
+        "Free trial information", "Premium plan features",
+        "How much does subscription cost", "I was charged for subscription"
+      ],
+      "responses": [
+        "You can manage your subscription from Account Settings > Subscriptions.",
+        "To cancel, go to Subscriptions and click 'Cancel Plan' before the renewal date.",
+        "Our premium plan includes exclusive features and priority support.",
+        "Subscriptions renew automatically unless cancelled before the billing date.",
+        "To upgrade your plan, visit the 'Plans' page and choose your preferred option.",
+        "Subscription charges appear on your registered payment method on the billing date."
+      ]
+    },
+
+    {
+      "tag": "app_technical_issue",
+      "patterns": [
+        "App is not working", "App keeps crashing", "Cannot open the app",
+        "App is slow", "App not loading", "Website is down",
+        "I'm getting an error", "Error on checkout page", "Black screen on app",
+        "App freezing", "Website not responding", "Can't add to cart",
+        "Search not working", "App update problem", "Login page not loading",
+        "Photos not loading in app", "App says session expired",
+        "App not opening", "Technical error on website", "Page not found error",
+        "Browser error", "App bug", "App not responding",
+        "I keep getting error messages", "App glitch",
+        "Website loading issue", "App crashes on startup",
+        "I can't access the website", "Error 404", "Internal server error"
+      ],
+      "responses": [
+        "Please try restarting the app and check if the issue persists.",
+        "Make sure you have the latest version of the app installed.",
+        "Clear the app cache from your device settings and try again.",
+        "Try uninstalling and reinstalling the app.",
+        "The issue may be temporary. Please try again after a few minutes.",
+        "If the problem continues, please share a screenshot so we can investigate further."
+      ]
+    },
+
+    {
+      "tag": "product_review",
+      "patterns": [
+        "How to write a review", "I want to give feedback on product",
+        "Rate a product", "Submit a review", "Leave product rating",
+        "Where to post review", "Can I edit my review", "Delete my review",
+        "Review not published", "My review was removed", "How to rate seller",
+        "I want to review my purchase", "Leave a product comment",
+        "Give star rating", "Product feedback", "My review is not showing",
+        "Review submission", "How to add product review",
+        "I want to rate my order", "Give seller feedback",
+        "Review section not working", "Posting a review",
+        "Share my experience", "Write feedback about product",
+        "How do I leave a rating", "Review guidelines"
+      ],
+      "responses": [
+        "You can write a review from 'My Orders' > select the product > 'Write a Review'.",
+        "Reviews can be submitted after the delivery is confirmed.",
+        "You can edit your review within 30 days of posting it.",
+        "Ratings and reviews help other customers make informed decisions.",
+        "Reviews go through a moderation process before being published.",
+        "If your review was removed, it may have violated our review policy."
+      ]
+    },
+
+    {
+      "tag": "loyalty_rewards",
+      "patterns": [
+        "How do I earn reward points", "Redeem my points", "Points balance",
+        "Reward points expiry", "My points are missing",
+        "How much are my points worth", "Use points at checkout",
+        "Loyalty program details", "Points not added to account",
+        "Can I transfer my points", "Referral bonus points", "Reward tier status",
+        "How do loyalty points work", "Check my reward balance",
+        "I did not get my points", "Points redemption issue",
+        "Reward program membership", "How to earn more points",
+        "Cashback points", "Points not credited", "My rewards are gone",
+        "I lost my reward points", "How to use points for discount",
+        "Points expiry date", "Tier upgrade rewards"
+      ],
+      "responses": [
+        "You earn reward points on every purchase. Points are added after delivery is confirmed.",
+        "Check your points balance in 'My Account' > 'Rewards'.",
+        "Reward points can be redeemed at checkout to get a discount.",
+        "Points typically expire after 12 months from the date they were earned.",
+        "If your points are missing, please share your order ID and we'll look into it.",
+        "Referral bonuses are credited once your referred friend completes their first purchase."
+      ]
+    },
+
+    {
+      "tag": "seller_support",
+      "patterns": [
+        "I want to sell on your platform", "How to become a seller",
+        "Seller registration", "Seller account help", "Commission for sellers",
+        "How to list products", "Seller dashboard issue", "Seller payment problem",
+        "My seller account is suspended", "Return from buyer, seller query",
+        "Seller policies", "How do I manage my seller store",
+        "Become a vendor", "Register as seller", "Seller onboarding",
+        "How to set up seller account", "Seller commission rates",
+        "Seller payout schedule", "My seller payment is delayed",
+        "Seller performance metrics", "How to add products as seller",
+        "Seller support contact", "Seller account verification",
+        "Seller returns policy", "How do sellers get paid"
+      ],
+      "responses": [
+        "You can register as a seller from our 'Sell With Us' page.",
+        "Seller registration requires your business details and bank account information.",
+        "Product listing guidelines are available in the Seller Help Center.",
+        "Seller payments are processed every 7-14 days after order completion.",
+        "If your seller account is suspended, please contact the Seller Support team.",
+        "Visit our Seller Dashboard to manage your listings, orders, and payouts."
+      ]
+    },
+
+    {
+      "tag": "privacy_data",
+      "patterns": [
+        "How is my data used", "Delete my account", "Privacy policy",
+        "What data do you collect", "Is my information safe", "Data security",
+        "Stop marketing emails", "Unsubscribe from emails", "Personal data request",
+        "GDPR request", "Data deletion request", "How to opt out of notifications",
+        "Remove my personal data", "Who has access to my data",
+        "I want to delete my profile", "Account deletion request",
+        "Stop sending me promotional emails", "Data privacy concern",
+        "Is my payment info safe", "How do you protect my data",
+        "Privacy settings", "Opt out of data collection",
+        "Stop notifications", "Data breach concern",
+        "My data was leaked", "I want to close my account"
+      ],
+      "responses": [
+        "Your data is protected as per our Privacy Policy, available on our website.",
+        "You can request account deletion from Account Settings > Privacy > Delete Account.",
+        "We collect only the data necessary to process orders and improve your experience.",
+        "To unsubscribe from marketing emails, click 'Unsubscribe' at the bottom of any email.",
+        "You can manage notification preferences in Account Settings > Notifications.",
+        "For data requests or GDPR-related queries, please email our Data Protection Officer."
+      ]
+    },
+
+    {
+      "tag": "gift_card",
+      "patterns": [
+        "How to buy a gift card", "Use gift card", "Gift card balance",
+        "Gift card not working", "Send a gift card", "Redeem gift card",
+        "Gift voucher issue", "Can I use multiple gift cards",
+        "Gift card expiry", "I received a gift card", "Corporate gift cards",
+        "Buy gift voucher", "Gift card purchase", "Gift card code invalid",
+        "How to send a gift card to someone", "Check gift card balance",
+        "Gift card redemption problem", "Expired gift card",
+        "Gift card not accepted at checkout", "I want to gift someone",
+        "Digital gift card", "Gift certificate", "Voucher not working",
+        "How to use my voucher code", "Gift card value"
+      ],
+      "responses": [
+        "Gift cards can be purchased from the Gift Cards section on our website.",
+        "To redeem a gift card, enter the code at checkout under 'Payment Options'.",
+        "Check your gift card balance in 'My Account' > 'Gift Cards'.",
+        "Gift cards are valid for 12 months from the date of purchase.",
+        "You can use multiple gift cards in a single transaction.",
+        "For bulk or corporate gift card orders, please contact our enterprise team."
+      ]
+    },
+
+    {
+      "tag": "warranty_claim",
+      "patterns": [
+        "How to claim warranty", "Product is defective", "Item stopped working",
+        "Warranty period", "Warranty claim process",
+        "Is my product under warranty", "Broken product after few days",
+        "Product malfunction", "Defective item support",
+        "How to register for warranty", "Warranty card details",
+        "Warranty repair request", "My product broke down",
+        "I want to claim warranty", "Product stopped working",
+        "Defective product replacement", "Manufacturing defect",
+        "Product died after one week", "How long is the warranty",
+        "Out of warranty repair", "Warranty transfer",
+        "Warranty not honoured", "My item is under warranty",
+        "Claim warranty on broken item", "Product fault warranty"
+      ],
+      "responses": [
+        "Most products come with a manufacturer's warranty. Check your product documentation for details.",
+        "To claim warranty, please share your order ID and a description of the defect.",
+        "You may need to register the product on the manufacturer's website for warranty coverage.",
+        "Warranty repairs or replacements are typically processed within 7-14 business days.",
+        "Please keep your invoice handy as it serves as proof of purchase for warranty claims.",
+        "Our team will coordinate with the manufacturer on your behalf for warranty issues."
+      ]
+    },
+
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "What is your phone number", "Customer care number",
+        "How to contact support", "Email address for support", "Support hours",
+        "When is support available", "Live chat support", "Help center",
+        "Support ticket", "Raise a complaint", "Submit a query", "Contact us page",
+        "How do I reach you", "Support contact details",
+        "What is the helpline number", "Customer service number",
+        "How to get in touch", "I want to call support",
+        "Is there phone support", "Email for customer service",
+        "How to submit a ticket", "Support response time",
+        "Is chat support available", "Contact customer care",
+        "Support team contact", "Help desk number"
+      ],
+      "responses": [
+        "You can reach our customer support at support@company.com.",
+        "Our helpline is available Monday to Saturday from 9 AM to 6 PM.",
+        "You can also chat with us live on the website or through our app.",
+        "Visit our Help Center for FAQs and self-service support options.",
+        "To raise a complaint, go to 'Contact Us' and fill in the support form.",
+        "We typically respond to email queries within 24 business hours."
+      ]
+    },
+
+    {
+      "tag": "negative_feedback",
+      "patterns": [
+        "I am not happy with the service", "Poor customer support",
+        "Very bad experience", "Worst service ever", "I am disappointed",
+        "This is unacceptable", "I want to complain", "Your service is terrible",
+        "I am frustrated", "No one is helping me", "This is ridiculous",
+        "I will never shop here again", "Pathetic service",
+        "Terrible experience", "This is the worst", "I hate this service",
+        "Awful support", "Disgusting service", "I'm very unhappy",
+        "Your team is useless", "I am extremely dissatisfied",
+        "The worst customer service", "I'm angry with your service",
+        "You people are hopeless", "My issue is still not resolved",
+        "Stop wasting my time", "This is completely unacceptable"
+      ],
+      "responses": [
+        "We sincerely apologize for the inconvenience. Please share the details so we can help.",
+        "We're sorry to hear about your experience. Let us make it right.",
+        "Your feedback is important to us. We'll work to resolve this as quickly as possible.",
+        "We understand your frustration and take your complaint very seriously.",
+        "We're escalating your issue to our senior support team right away.",
+        "Please give us a chance to resolve this. Can you share your order or issue details?"
+      ]
+    },
+
+    {
+      "tag": "bot_capabilities",
+      "patterns": [
+        "What can you do", "What are your features", "How can you help me",
+        "What do you support", "Are you a bot", "Are you AI",
+        "What topics can you help with", "Can you solve my problem",
+        "What kind of questions can I ask", "List your capabilities",
+        "What services do you offer", "What are you", "Who are you",
+        "What is this chatbot for", "What can this bot do",
+        "Tell me what you can help with", "What questions can you answer",
+        "Bot functions", "AI capabilities", "What problems can you solve",
+        "Can you help me with my order", "What support do you provide",
+        "Is this an AI assistant", "Chatbot functions", "Help menu"
+      ],
+      "responses": [
+        "I can help you with order tracking, refunds, payments, account issues, product queries, and more!",
+        "I'm an AI-powered support assistant. Ask me anything about your orders, account, or products.",
+        "Yes, I'm a chatbot. I can answer many common questions instantly!",
+        "I support queries on orders, deliveries, returns, payments, subscriptions, and technical issues.",
+        "If I can't help, I'll connect you to a human agent who can.",
+        "Try asking me about your order status, return policy, or account settings."
+      ]
+    }
+
+  ]
+}
